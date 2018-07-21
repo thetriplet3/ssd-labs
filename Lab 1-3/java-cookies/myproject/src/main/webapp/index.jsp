@@ -13,7 +13,8 @@
 </form>
 
 <script>
-	alert(document.cookie);
+    //Prints only cookies without httpOnly flag
+	console.log(document.cookie);
 </script>
 
 </body>

@@ -22,8 +22,12 @@ public class ServletDemo extends HttpServlet {
         c1.setMaxAge(60*60); //1 hour
         c2.setMaxAge(60*60); //1 hour
 
+
+        //Cannot read without https
         c2.setSecure(true);
         
+
+        //Cannot read from javascript
         response.addHeader("Set-Cookie","name=c3; HttpOnly");
 
 
